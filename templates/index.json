@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "login_b2b_HxyJTp": {
+      "type": "login-b2b",
+      "settings": {
+        "heading": "Visit our B2B Shop",
+        "existing_customer_heading": "Already a B2B customer?",
+        "existing_customer_subtext": "Log in with your email address.",
+        "login_button_text": "LOG IN",
+        "new_customer_heading": "Don't have a B2B customer account yet?",
+        "new_customer_subtext": "Please fill out the registration form.",
+        "register_button_text": "REGISTER NOW"
+      }
+    },
     "scrolling_content_zy6Yfh": {
       "type": "scrolling-content",
       "blocks": {
@@ -487,6 +499,7 @@
     }
   },
   "order": [
+    "login_b2b_HxyJTp",
     "scrolling_content_zy6Yfh",
     "595945bf-a38b-4311-bd29-0b02b96db497",
     "image_overlay_link_AwR46e",
