@@ -12,6 +12,12 @@
   text-align: center;
 }
 .b2b-shop-heading {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    letter-spacing: var(--heading-letter-spacing);
+    text-transform: var(--heading-text-transform);
+    overflow-wrap: anywhere;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -54,7 +60,7 @@
 </style>
 
 <div class="b2b-shop-section">
-  <h1 class="h1 b2b-shop-heading">{{ section.settings.heading }}</h1>
+  <h1 class="b2b-shop-heading">{{ section.settings.heading }}</h1>
   <div class="b2b-shop-options">
     <div class="b2b-shop-option">
       <h2 class="h2">{{ section.settings.existing_customer_heading }}</h2>
