@@ -1,18 +1,124 @@
+{% comment %}
+  B2B Shop Section
+  ---------------
+  A customizable section for B2B customer login and registration.
+{% endcomment %}
+
+<style>
+.b2b-shop-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.b2b-shop-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.b2b-shop-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.b2b-shop-option {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+.b2b-shop-option h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.b2b-shop-option p {
+  margin-bottom: 1rem;
+}
+.b2b-shop-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+.b2b-shop-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .b2b-shop-heading { font-size: 2rem; }
+  .b2b-shop-option { flex: 1 1 100%; }
+}
+</style>
+
+<div class="b2b-shop-section">
+  <h1 class="b2b-shop-heading">{{ section.settings.heading }}</h1>
+  <div class="b2b-shop-options">
+    <div class="b2b-shop-option">
+      <h2>{{ section.settings.existing_customer_heading }}</h2>
+      <p>{{ section.settings.existing_customer_subtext }}</p>
+      <a href="{{ routes.account_login_url }}" class="b2b-shop-button">{{ section.settings.login_button_text }}</a>
+    </div>
+    <div class="b2b-shop-option">
+      <h2>{{ section.settings.new_customer_heading }}</h2>
+      <p>{{ section.settings.new_customer_subtext }}</p>
+      <a href="{{ routes.account_register_url }}" class="b2b-shop-button">{{ section.settings.register_button_text }}</a>
+    </div>
+  </div>
+</div>
+
 {% schema %}
+{
+  "name": "B2B Shop Section",
+  "settings": [
     {
-      "name": "B2B Login",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Section Title",
-          "default": "B2B Login"
-        }
-      ],
-      "presets": [
-        {
-          "name": "B2B Login"
-        }
-      ]
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Visit our B2B Shop"
+    },
+    {
+      "type": "text",
+      "id": "existing_customer_heading",
+      "label": "Existing Customer Heading",
+      "default": "Already a B2B customer?"
+    },
+    {
+      "type": "text",
+      "id": "existing_customer_subtext",
+      "label": "Existing Customer Subtext",
+      "default": "Log in with your email address."
+    },
+    {
+      "type": "text",
+      "id": "login_button_text",
+      "label": "Login Button Text",
+      "default": "LOG IN"
+    },
+    {
+      "type": "text",
+      "id": "new_customer_heading",
+      "label": "New Customer Heading",
+      "default": "Don't have a B2B customer account yet?"
+    },
+    {
+      "type": "text",
+      "id": "new_customer_subtext",
+      "label": "New Customer Subtext",
+      "default": "Please fill out the registration form."
+    },
+    {
+      "type": "text",
+      "id": "register_button_text",
+      "label": "Register Button Text",
+      "default": "REGISTER NOW"
     }
-    {% endschema %}
+  ],
+  "presets": [
+    {
+      "name": "B2B Shop Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
