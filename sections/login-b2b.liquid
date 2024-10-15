@@ -76,11 +76,12 @@
 </div>
 
 <script>
+    console.log('login-b2b.liquid');
   function scrollToRegistration(event) {
     event.preventDefault();
-    const formHeader = document.querySelector('._formHeader_1ll8d_19');
-    if (formHeader) {
-      formHeader.scrollIntoView({ behavior: 'smooth' });
+    const formContainer = document.getElementById('form-container-ref');
+    if (formContainer) {
+      formContainer.scrollIntoView({ behavior: 'smooth' });
     }
   }
 </script>
