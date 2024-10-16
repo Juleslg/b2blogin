@@ -70,18 +70,18 @@
     <div class="b2b-shop-option">
       <h2 class="h2">{{ section.settings.new_customer_heading }}</h2>
       <p class="h6">{{ section.settings.new_customer_subtext }}</p>
-      <button class="button w-full" onclick="scrollToRegistration()">{{ section.settings.register_button_text }}</button>
+      <button id="register-button" class="button w-full">{{ section.settings.register_button_text }}</button>
     </div>
   </div>
 </div>
 
 <script>
-  function scrollToRegistration() {
-    const registrationDiv = document.querySelector('._inline_stahb_47');
-    if (registrationDiv) {
-      registrationDiv.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+    document.getElementById('register-button').addEventListener('click', function() {
+        document.getElementById('form-container-ref').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
 </script>
 {% schema %}
 {
