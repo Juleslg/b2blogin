@@ -9,6 +9,41 @@
  */
 {
   "sections": {
+    "image_with_text_overlay_Cxzr7y": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_DLqK3X": {
+          "type": "heading",
+          "settings": {
+            "text": "A design that stands the test of time",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_fiktGR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DLqK3X",
+        "richtext_fiktGR"
+      ],
+      "settings": {
+        "image_size": "auto",
+        "image": "shopify://shop_images/2021-07-23_Onomao16411_662c26fe-e969-4a9f-9fed-9c61c9e42a08.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "login_b2b_HxyJTp": {
       "type": "login-b2b",
       "settings": {
@@ -499,6 +534,7 @@
     }
   },
   "order": [
+    "image_with_text_overlay_Cxzr7y",
     "login_b2b_HxyJTp",
     "scrolling_content_zy6Yfh",
     "595945bf-a38b-4311-bd29-0b02b96db497",
