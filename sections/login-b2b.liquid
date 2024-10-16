@@ -77,9 +77,11 @@
 
 <script>
     document.getElementById('register-button').addEventListener('click', function() {
-        document.getElementById('form-container-ref').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+        const targetElement = document.querySelector('.scrolling-content__text.heading');
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
         });
     });
 </script>
