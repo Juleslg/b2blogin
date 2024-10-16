@@ -18,17 +18,10 @@
             "text": "A design that stands the test of time",
             "heading_tag": "h1"
           }
-        },
-        "richtext_fiktGR": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
         }
       },
       "block_order": [
-        "heading_DLqK3X",
-        "richtext_fiktGR"
+        "heading_DLqK3X"
       ],
       "settings": {
         "image_size": "auto",
@@ -37,8 +30,8 @@
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
         "content_width": "md",
-        "mobile_text_position": "place-self-start-center text-center",
-        "desktop_text_position": "sm:place-self-start-center sm:text-center",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
