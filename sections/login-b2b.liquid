@@ -73,14 +73,18 @@
   <h1 class="b2b-shop-heading">{{ section.settings.heading }}</h1>
   <div class="b2b-shop-options">
     <div class="b2b-shop-option">
-      <h2 class="h2">{{ section.settings.existing_customer_heading }}</h2>
-      <p class="h6">{{ section.settings.existing_customer_subtext }}</p>
-      <a href="{{ routes.account_login_url }}" class="button w-full">{{ section.settings.login_button_text }}</a>
+      <div>
+        <h2 class="h2">{{ section.settings.existing_customer_heading }}</h2>
+        <p class="h6">{{ section.settings.existing_customer_subtext }}</p>
+      </div>
+      <a href="{{ routes.account_login_url }}" class="button">{{ section.settings.login_button_text }}</a>
     </div>
     <div class="b2b-shop-option">
-      <h2 class="h2">{{ section.settings.new_customer_heading }}</h2>
-      <p class="h6">{{ section.settings.new_customer_subtext }}</p>
-      <button id="register-button" class="button w-full">{{ section.settings.register_button_text }}</button>
+      <div>
+        <h2 class="h2">{{ section.settings.new_customer_heading }}</h2>
+        <p class="h6">{{ section.settings.new_customer_subtext }}</p>
+      </div>
+      <button id="register-button" class="button">{{ section.settings.register_button_text }}</button>
     </div>
   </div>
 </div>
