@@ -114,6 +114,7 @@
         "template--21460567392597__595945bf-a38b-4311-bd29-0b02b96db497-heading-1",
         "template--21460567392597__595945bf-a38b-4311-bd29-0b02b96db497-richtext-1"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "content_width": "sm",
